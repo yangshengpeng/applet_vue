@@ -1,0 +1,47 @@
+.weather1 .log {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.weather .log {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.list-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter,
+.list-leave-to
+/* .list-leave-active for below version 2.1.8 */
+
+    {
+
+    opacity: 0;
+    transform: translateX(300px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+}
+.head-portrait{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.music {
+    height: 400px;
+    display: flex;
+}
+
+.music .left {
+    width: 400px;
+    background-color:red;
+    overflow-y: scroll;
+}
+
+.music .left input {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    border-radius: 10px;
+    width: 300px;
+    padding-left: 20px;
+    border: none;
+    outline-style: none;
+}
+
+.music .left ul {
+    list-style: none;
+
+}
+
+.music .left ul li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+
+.music .right {
+    flex: 1;
+    background-color: greenyellow;
+}
+
+.music .right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.music .right audio {
+    display: block;
+    margin: 0 auto;
+}
+
+.auto-rotate {
+    animation: rotate linear infinite 1s;
+}
+
+.auto-rotate-stop {
+    animation: rotate linear infinite 0s;
+}
+
+@keyframes rotate {
+    from {}
+    50% {
+        transform: rotateZ(180deg) scale(1.1, 1.1);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
